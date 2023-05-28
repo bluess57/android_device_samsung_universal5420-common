@@ -16,10 +16,12 @@ on post-fs-data
     # for WIFI TRP/TIS
     chown system root /data/.psm.info
     chmod 0664 /data/.psm.info
+    write /data/.psm.info 2
 
     # for WIFI Antenna Selection
     chown system root /data/.ant.info
     chmod 0664 /data/.ant.info
+    write /data/.ant.info 1
 
     # for WIFI Version
     write /data/.wifiver.info 0
@@ -30,6 +32,7 @@ on post-fs-data
     chmod 0664 /data/.bustxglom.info
     chmod 0664 /data/.roamoff.info
     chmod 0664 /data/.frameburst.info
+    write /data/.frameburst.info 1
     chmod 0664 /data/.txbf.info
     # for WIFI MAC address
     mkdir /efs/wifi 0775 radio system
