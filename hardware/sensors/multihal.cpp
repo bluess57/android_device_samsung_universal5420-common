@@ -14,10 +14,12 @@
  * limitations under the License.
  */
 
+#define LOG_TAG "MultiHal"
+#define LOG_NDEBUG 1
+
 #include "SensorEventQueue.h"
 #include "multihal.h"
 
-#define LOG_NDEBUG 1
 #include <cutils/log.h>
 #include <cutils/atomic.h>
 #include <hardware/sensors.h>
