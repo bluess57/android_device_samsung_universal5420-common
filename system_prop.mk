@@ -70,3 +70,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # but none are in range.
 
    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bionic.cpu_variant=cortex-a15 \
+    ro.bionic.2nd_cpu_variant=cortex-a15
