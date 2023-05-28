@@ -1,1 +1,2 @@
 allow audioserver audio_service:service_manager find;
+allow audioserver self:process execmem;
